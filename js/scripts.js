@@ -521,10 +521,12 @@ function initTheside() {
         $(b).fadeIn();
     });
     var name = $("#name").value
+    var phone = $("#phone").value
+    var message = $("#comments").value
     $("#butt").on("click", function() {
         console.log("hiiiiiiiii");
 
-        window.open("mailto:avsangeeth372@gmail.com?cc=avsangeeth372@gmail.com&bcc=avsangeeth372@gmail.com&subject=From%20Website&body=" + name + "%20");
+        window.open("mailto:dezonearchitecture@gmail.com?cc=dezonearchitecture@gmail.com&bcc=dezonearchitecture@gmail.com&subject=From%20Website&body=" + name + "\n" + phone + "\n" + message + " % 20 ");
     })
 
     $('.chosen-select').selectbox();
